@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="18dp"
+    app:cardCornerRadius="30dp">
+
+
+    <RelativeLayout
+        android:layout_width="319dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="157dp"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya"
+            android:text="Заголовок блока"
+            android:textAlignment="center"
+            android:textColor="#253334"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:text="Кратенькое описание" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:text="блока с двумя строчками" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+
+            app:srcCompat="@drawable/emovebg" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView12"
+            android:text="Button" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>

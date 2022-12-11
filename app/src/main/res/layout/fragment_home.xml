@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#253334"
+    tools:context=".pop.ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="67dp"
+            android:layout_height="99dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="67dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40sp"
+            android:layout_marginStart="15sp"
+            android:src="@drawable/hamburger" />
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="69dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="84dp"
+            android:layout_toRightOf="@+id/imageView7"
+            android:layout_marginTop="25sp"
+            android:src="@drawable/ellipse" />
+
+        <TextView
+                android:id="@+id/textView8"
+                android:layout_width="290dp"
+                android:layout_below="@+id/imageView7"
+                android:layout_marginTop="25sp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="20dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="290dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/textView8"
+                android:layout_marginTop="5sp"
+                android:layout_centerHorizontal="true"
+                android:text="TextView" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5sp"
+                android:layout_marginStart="15sp"
+                android:layout_below="@+id/textView9"
+                android:layout_gravity="bottom"
+
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        <include
+            layout="@layout/card_item"
+            android:id="@+id/card1"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="15sp"
+            android:layout_below="@+id/recyclerView2"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/card_item"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_below="@+id/card1"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
